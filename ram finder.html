@@ -1,0 +1,13 @@
+<html>
+  <body>
+    <input type="text" placeholder="enter your mobile name" id="device">
+    <input type="button" value="find" onclick="submit();">
+    <script>
+      function submit() {
+        var memory = navigator.deviceMemory;
+        var name = document.getElementById("device").value;
+        alert("your mobile " + name + " have " + memory +"GB ram memory");
+      }
+    </script>
+  </body>
+</html>
